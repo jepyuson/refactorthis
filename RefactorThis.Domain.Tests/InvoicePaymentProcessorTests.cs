@@ -28,6 +28,7 @@ namespace RefactorThis.Domain.Tests
         [Test]
 		public void ProcessPayment_Should_ThrowException_When_NoInoiceFoundForPaymentReference( )
 		{
+			Invoice invoice = null;
 			var payment = new Payment( );
 			var failureMessage = "";
 
